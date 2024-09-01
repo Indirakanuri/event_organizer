@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Header Styles */
+.header {
+    background-color: #DEAD9D; /* Rose Gold */
+    color: #6D100F; /* Red Wine */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.header .logo p {
+    margin: 0;
+    font-style: italic;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #6D100F; /* Red Wine */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #6D100F; /* Red Wine */
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Section Styles */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: white;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+#home {
+    background-color: #fff0f5; /* Light Rose Gold */
+}
+
+#about {
+    background-color: #f7e7e7; /* Another shade of Rose Gold */
+}
+
+#services {
+    background-color: #ffe4e1; /* Light Coral */
+}
+
+#gallery {
+    background-color: #f5f5f5; /* White Smoke */
+}
+
+#contact {
+    background-color: #fdf5e6; /* Old Lace */
+}
+
+#collaborate {
+    background-color: #faf0e6; /* Linen */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #6D100F; /* Red Wine */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
