@@ -52,13 +52,13 @@
             const content = document.getElementById('services-content');
             const buttons = document.querySelectorAll('.service-button');
 
-            // Remove the active class from all buttons
+            
             buttons.forEach(button => button.classList.remove('active'));
 
-            // Add the active class to the clicked button
+            
             document.querySelector(`[onclick="showService('${service}')"]`).classList.add('active');
 
-            // Update the content based on the service
+           
             if (service === 'weddings') {
                 content.innerHTML = `
                     <h2>Weddings</h2>
