@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siya - Organizer</title>
+  <style>
+  /* General styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  header h1, footer p {
+    margin: 0;
+  }
+
+  /* Organizer details section */
+  .organizer-details {
+    background: linear-gradient(to right, #000000, #000000);
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    border-radius: 8px;
+    margin: 2em auto;
+    width: 80%;
+    max-width: 1200px;
+  }
+
+  .organizer-details img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1em;
+  }
+
+  .organizer-details h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+  }
+
+  .organizer-details p {
+    font-size: 1.2em;
+  }
+
+  /* Events organized section */
+  .events-organized {
+    background-color: #fff;
+    color: #333;
+    padding: 2em;
+    border-radius: 8px;
+    margin-top: 2em;
+  }
+
+  .events-organized h3 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #ff7e5f;
+  }
+
+  .event {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+  }
+
+  .event img {
+    border-radius: 8px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 1em;
+    transition: transform 0.3s ease;
+  }
+
+  .event img:hover {
+    transform: scale(1.1);
+  }
+
+  .event-title {
+    margin: 0;
+    font-size: 1.5em;
+    color: #feb47b;
+  }
+
+  /* Add pictures section */
+  .add-pictures {
+    background-color: #fff;
+    color: #333;
+    padding: 2em;
+    border-radius: 8px;
+    margin-top: 2em;
+  }
+
+  .add-pictures h3 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #ff7e5f;
+  }
+
+  .add-pictures form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .add-pictures input[type="file"] {
+    margin-bottom: 1em;
+  }
+
+  .add-pictures input[type="submit"] {
+    background-color: #ff7e5f;
+    color: #fff;
+    border: none;
+    padding: 0.5em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .add-pictures input[type="submit"]:hover {
+    background-color: #feb47b;
+  }
+
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  .modal-content img {
+    width: 100%;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .modal-close:hover,
+  .modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Welcome to Siya's Event Organizer Page</h1>
+</header>
+
+</head>
+<body>
+  <header>
+    <!-- Your header content here -->
+  </header>
+
+  <section class="organizer-details">
+    <img src="c:\Users\kanur\OneDrive\Desktop\rrp\examples\organizer2.jpg" alt="Siya">
+    <h2>Siya</h2>
+    <p>Siya specializes in creating stunning visuals and decor for all types of events. Her artistic background and passion for design bring a touch of elegance to every occasion she manages.</p>
+
+    <div class="events-organized">
+      <h3>Events Organized by Siya</h3>
+      <div class="event">
+        <img src="siya_event1.jpg" alt="Event Title">
+        <h4 class="event-title">Event--</h4>
+        <p>MARRIAGE</p>
+      </div>
+      <div class="event">
+        <img src="siya_event2.jpg" alt="Event Title">
+        <h4 class="event-title">Event--</h4>
+        <p>PANDALA</p>
+      </div>
+      <!-- Add more events as needed -->
+    </div>
+
+    <div class="add-pictures">
+      <h3>Add Pictures</h3>
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="file[]" multiple>
+        <input type="submit" value="Upload">
+      </form>
+    </div>
+  
+  <div class="contact-details">
+    <h3>Contact Details</h3>
+    <p><span>Email:</span> siya@gmail.com</p>
+    <p><span>Phone:</span> +123 456 7890</p>
+    <p><span>Availability:</span> Available for bookings from July 10th to July 20th, 2024</p>
+  </div>
+</section>
+
+  <footer>
+    <!-- Your footer content here -->
+  </footer>
+  <div id="myModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="img01">
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal
+    var modalImg = document.getElementById("img01");
+    var images = document.querySelectorAll('.event-img');
+    images.forEach(img => {
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+    });
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("modal-close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
+
+
+</body>
+</html>
